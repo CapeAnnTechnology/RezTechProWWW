@@ -1,6 +1,9 @@
 //
 // @import "~bootstrap/scss/bootstrap.scss";
 
+// Import Custom Variables
+@import "variables";
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -8,35 +11,37 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/bootstrap";
+
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/root";
+// @import "~bootstrap/scss/reboot";
+// @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
 // @import "~bootstrap/scss/code";
 // @import "~bootstrap/scss/grid";
 // @import "~bootstrap/scss/tables";
 // @import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/buttons";
+// @import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
 // @import "~bootstrap/scss/input-group";
 // @import "~bootstrap/scss/custom-forms";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/nav";
+// @import "~bootstrap/scss/navbar";
 // @import "~bootstrap/scss/card";
 // @import "~bootstrap/scss/breadcrumb";
 // @import "~bootstrap/scss/pagination";
 // @import "~bootstrap/scss/badge";
 // @import "~bootstrap/scss/jumbotron";
-@import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/alert";
 // @import "~bootstrap/scss/progress";
 // @import "~bootstrap/scss/media";
 // @import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/close";
 // @import "~bootstrap/scss/toasts";
 // @import "~bootstrap/scss/modal";
 // @import "~bootstrap/scss/tooltip";
@@ -47,8 +52,24 @@
 // @import "~bootstrap/scss/print";
 
 // partials
+// @import 'partials/layout.vars';
+// @import 'partials/responsive.partial';
+
+// global styles
+// @import 'base';
+
+// partials
 @import 'partials/layout.vars';
 @import 'partials/responsive.partial';
 
 // global styles
 @import 'base';
+
+// Import Custom SCSS
+@import "mixins";
+@import "global";
+@import "utilities";
+// @import "navbar";
+@import "cards";
+@import "login";
+// @import "footer";

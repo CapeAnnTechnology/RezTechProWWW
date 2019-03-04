@@ -7,9 +7,9 @@ import { environment } from './environments/environment';
 import 'jquery';
 import 'popper.js/dist/popper';
 
-// import 'bootstrap';
+import 'bootstrap';
 
-import 'bootstrap/js/dist/alert';
+// import 'bootstrap/js/dist/alert';
 // import 'bootstrap/js/dist/button';
 // import 'bootstrap/js/dist/carousel';
 // import 'bootstrap/js/dist/collapse';
@@ -23,6 +23,7 @@ import 'bootstrap/js/dist/alert';
 // import 'bootstrap/js/dist/tooltip';
 // import 'bootstrap/js/dist/util';
 
+// import './assets/js/sb-admin.js';
 
 if (environment.production) {
   enableProdMode();

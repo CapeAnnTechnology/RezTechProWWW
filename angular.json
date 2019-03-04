@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": "1.0.1",
+  "version": 1.0,
   "newProjectRoot": "projects",
   "projects": {
     "RezTechProWWW": {
@@ -33,6 +33,7 @@
             "scripts": [
               // "node_modules/jquery/dist/jquery.min.js",
               // "node_modules/popper.js/dist/umd/popper.min.js"
+              // "src/assets/js/sb-admin.js"
             ],
             "es5BrowserSupport": true
           },
@@ -94,6 +95,7 @@
             "scripts": [
               // "node_modules/jquery/dist/jquery.min.js",
               // "node_modules/popper.js/dist/umd/popper.min.js"
+              // "src/assets/js/sb-admin.js"
             ],
             "assets": [
               "src/favicon.ico",

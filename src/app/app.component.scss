@@ -1,31 +1,33 @@
-$backColor: brown;
+/*--------------------
+    APP COMPONENT
+--------------------*/
 
-.search-button {
-    border-color: skyblue;
-    color: blue;
+@import '../assets/scss/partials/layout.vars';
+@import '../assets/scss/partials/responsive.partial';
 
-    &:hover, &:after, &:focus {
-        background-color: transparent;
-        color: $backColor;
-    }
+.layout-overflow {
+  overflow: hidden; /* necessary to handle offcanvas scrollbar behavior */
 }
-.brand-custom {
-    &:hover, &:focus, &:active {
-        background-color: transparent;
-        color:$backColor;
-    }
-}
+.layout-canvas {
+  background: #fff;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari: http://caniuse.com/#search=css3%203d */
+  position: relative;
+    left: 0;
+  transition: transform 250ms ease;
+  transform: translate3d(0,0,0);
+  width: 100%;
 
-.login-custom {
-    &:hover, &:focus, &:active {
-        background-color: transparent;
-        color:$backColor !important;
-    }
+  &.nav-open {
+    transform: translate3d(270px,0,0);
+  }
 }
+.layout-view {
+  padding: $padding-screen-small;
 
-.register-custom {
-    &:hover, &:focus, &:active {
-        background-color: transparent;
-        color:$backColor !important;
-    }
+  @include mq($large) {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: $padding-screen-large;
+  }
 }
